@@ -22,7 +22,7 @@ base_model=VGG16(input_shape=IMG_SHAPE, include_top=False, weights='imagenet')
 base_model.summary()
 #bloquer le modèle de base
 base_model.trainable = False
-folders = glob(train_dir+ '/*')
+folders = glob(x_train+ '/*')
 #Ajouter les couches de sorties
 x = Flatten()(base_model.output)
 prediction = Dense(len(folders), activation='softmax')(x)
