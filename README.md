@@ -1,7 +1,6 @@
 # Melanoma Detection
 
 
-
 ## Table of contents
 
 * [Introduction](#introduction)
